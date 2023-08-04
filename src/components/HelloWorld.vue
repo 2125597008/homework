@@ -1,5 +1,5 @@
 <template>
-  <div id="box1">
+  <div id="App">
     <div id="header">
       <h5>微信读书</h5>
       <input type="text" name="" id="" placeholder="搜索" />
