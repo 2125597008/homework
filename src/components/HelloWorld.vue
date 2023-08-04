@@ -64,36 +64,7 @@
   </div>
 </template>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-new Vue({
-  el: "#app",
-  data: {
-    tabs: [
-      {
-        name: "推荐",
-      },
-      {
-        name: "分类",
-      },
-      {
-        name: "排行",
-      },
-      {
-        name: "文学艺术",
-      },
-      {
-        name: "哲学社科",
-      },
-    ],
-    selectedIndex: null,
-  },
-  methods: {
-    selectTab(index) {
-      this.selectedIndex = index;
-    },
-  },
-});
-</style>
+<style scoped></style>
 <script type="text/javascript">
 (function () {
   var styleNode = document.createElement("style");
