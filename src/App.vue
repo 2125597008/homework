@@ -7,7 +7,7 @@
 
 <script>
 import xcx from "./components/HelloWorld.vue";
-
+import footers from "./components/HelloWorld.vue";
 export default {
   components: {
     xcx,
