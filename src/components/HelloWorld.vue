@@ -1,5 +1,5 @@
 <template>
-  <div id="App">
+  <div>
     <div id="header">
       <h5>微信读书</h5>
       <input type="text" name="" id="" placeholder="搜索" />
@@ -63,8 +63,105 @@
     </div>
   </div>
 </template>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 26.78571429px;
+}
+#header {
+  width: 100%;
+  height: 3.84rem;
+  position: relative;
+}
+.icon {
+  width: 0.608rem;
+  height: 0.608rem;
+}
+#header h5 {
+  font-size: 0.544rem;
+  text-align: center;
+  line-height: 1.92rem;
+}
+#header input {
+  width: 70%;
+  height: 1.12rem;
+  padding: 0 0.96rem;
+  font-size: 0.512rem;
+  margin-left: 0.8rem;
+  border-radius: 0.64rem;
+  border: none;
+  outline: none;
+  background-color: #f5f2f2;
+}
+#header a {
+  position: absolute;
+  top: 2.08rem;
+  left: 0.992rem;
+}
+#main {
+  width: 100%;
+}
+#nav li {
+  float: left;
+  text-align: center;
+  width: 2.4rem;
+  height: 0.8rem;
+  font-size: 0.416rem;
+  color: #777777;
+  font-weight: bold;
+}
+#bookshelf {
+  width: 90%;
+  height: 4.8rem;
+  margin: auto;
+  background-color: #565860;
+  border-radius: 0.64rem;
+  margin-bottom: 0.64rem;
+}
+#bookshelf-title {
+  width: 100%;
+  height: 1.6rem;
+  position: relative;
+}
+#bookshelf-title img {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin-left: 0.64rem;
+  margin-top: 0.64rem;
+  display: inline-block;
+}
+#bookshelf-title span {
+  font-size: 0.448rem;
+  color: #fff;
+  position: absolute;
+  top: 0.64rem;
+  left: 1.76rem;
+}
+#bookshelf-title a {
+  font-size: 0.384rem;
+  position: absolute;
+  top: 0.704rem;
+  left: 3.84rem;
+  color: gray;
+}
+#bookshelf-main img {
+  width: 1.92rem;
+  margin-left: 0.64rem;
+  margin-top: 0.16rem;
+}
+#bookshelf-main span {
+  width: 0.864rem;
+  font-size: 0.448rem;
+  float: right;
+  margin-top: 0.704rem;
+}
+</style>
 <script type="text/javascript">
 (function () {
   var styleNode = document.createElement("style");
