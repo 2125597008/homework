@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <xcx></xcx>
-    <footers></footers>
+    <fldata></fldata>
   </div>
 </template>
 <script>
 import xcx from "./components/HelloWorld.vue";
+import fldata from "./components/FdataView.vue";
 export default {
   components: {
     xcx,
+    fldata,
   },
 };
 </script>

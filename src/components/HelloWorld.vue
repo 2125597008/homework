@@ -72,10 +72,16 @@
         </li>
       </ul>
     </div>
+    <fldata></fldata>
   </div>
 </template>
+
 <script>
+import fldata from "../components/FdataView.vue";
 export default {
+  components: {
+    fldata,
+  },
   data() {
     return {
       tabs: [
