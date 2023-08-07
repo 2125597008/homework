@@ -1,27 +1,10 @@
-<!-- <template>
-  <div>
-    <div id="nav">
-      <div id="app">
-        <ul>
-          <li
-            v-for="(tab, index) in tabs"
-            :key="index"
-            @click="selectTab(index)"
-            :class="{ active: selectedIndex === index }"
-          >
-            {{ tab.name }}
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<template>
   <div id="booklist">
     <ul>
       <li v-for="(item, index) in list" :key="index">
         <img :src="item.img" />
         <span id="ming">{{ item.title }}</span>
         <span id="zuo">{{ item.zuozhe }}</span>
-        <span id="tui">{{ item.tuijian }}</span>
         <span id="du">{{ item.du }}</span>
       </li>
     </ul>
@@ -35,7 +18,7 @@ export default {
       list: [
         {
           img: "https://weread-1258476243.file.myqcloud.com/weread/cover/75/cpplatform_vkins1c9mzkmfbt3kjlrn9/t6_cpplatform_vkins1c9mzkmfbt3kjlrn91677476708.jpg",
-          title: "长相思 (杨紫 张晚意 邓为 檀健...",
+          title: "长相思 (杨紫 张晚意 邓为 檀健次",
           zuozhe: "桐华 | 推荐值89.5%",
           du: "大家都在读",
         },
@@ -76,30 +59,62 @@ export default {
           du: "大家都在读",
         },
       ],
-      selectedIndex: null,
     };
   },
-  methods: {
-    selectTab(index) {
-      this.selectedIndex = index;
-    },
-  },
-};
-</script> -->
-<template>
-  <div>31331212</div>
-</template>
-
-<script>
-export default {
-  data() {
-    return {};
-  },
-
-  mounted() {},
-
   methods: {},
 };
 </script>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+#booklist {
+  width: 90%;
+  margin: auto;
+}
 
-<style lang="scss" scoped></style>
+#booklist li {
+  width: 90%;
+  height: 5%;
+  position: relative;
+}
+
+#booklist img {
+  width: 20%;
+  height: 20%;
+  margin-top: 8%;
+  display: inline-block;
+}
+
+#booklist span {
+  display: inline-block;
+}
+#du {
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  font-size: 1%;
+  color: gray;
+}
+
+#zuo {
+  position: absolute;
+  top: 52%;
+  left: 23%;
+  font-size: 1%;
+  color: gray;
+}
+
+#ming {
+  width: 75%;
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style>
